@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  padding: 1.6rem;
+}
+.head-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 100%;
+  }
+
+  gap: 1.5rem;
+
+  padding-top: 2rem;
+
+  .agencies {
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+}
+.hero-section {
+  padding-top: 1.7rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  h1 {
+    padding: 0.5rem 0;
+
+    text-transform: uppercase;
+
+    font-family: sans-serif;
+    font-size: 2.5rem;
+
+    font-weight: 100;
+    line-height: 1;
+
+    opacity: 0.8;
+  }
+  p {
+    font-family: monospace;
+    font-size: 1.2rem;
+
+    opacity: 0.9;
+    line-height: 1.6rem;
+  }
+
+  img {
+    width: 100%;
+  }
+  .brandings {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    hr {
+      color: gray;
+      opacity: 0.5;
+    }
+    .sec {
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1.2rem;
+
+  img {
+    width: 100%;
+  }
+  .mid-content {
+    display: flex;
+    gap: 2rem;
+    .side-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      p {
+        font-family: monospace;
+        font-size: 1.2rem;
+        opacity: 0.5;
+        line-height: 1.6rem;
+      }
+    }
+    h1 {
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-size: 2.8rem;
+      opacity: 0.8;
+      font-weight: 100;
+      line-height: 1;
+    }
+    .vertical-text {
+      p {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+      }
+    }
+  }
+}
+
+.services {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  img {
+    width: 100%;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h1 {
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-size: 2.7rem;
+      opacity: 0.8;
+      font-weight: 100;
+    }
+    .service-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    hr {
+      color: gray;
+      opacity: 0.5;
+    }
+    .service {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      h3 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      p {
+        font-family: monospace;
+        font-size: 1rem;
+        opacity: 0.5;
+        line-height: 1.6rem;
+      }
+      .service-bottom {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin: 0.7rem 0;
+        button {
+          padding: 0.5rem 0.7rem;
+          color: whitesmoke;
+          background-color: black;
+          border-radius: 50%;
+        }
+        p {
+          text-transform: uppercase;
+          font-family: monospace;
+          font-size: 0.9rem;
+          opacity: 1;
+          line-height: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+
+    .hero-section {
+      flex-direction: row-reverse;
+      gap: 4rem;
+
+      .hero-content {
+        padding: 1.6rem 0;
+
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 4.5rem;
+          letter-spacing: 0.1rem;
+          line-height: 1.1;
+        }
+        p {
+          margin-top: 0.7rem;
+          font-size: 1.5rem;
+          line-height: 1.4;
+        }
+        .brandings {
+          margin-top: auto;
+          .sec {
+            padding: 0.9rem 0;
+            p {
+              font-size: 1.8rem;
+              letter-spacing: 0.1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .mid-section {
+      flex-direction: row;
+      gap: 3rem;
+      .image {
+        width: 30%;
+      }
+      img {
+        width: 100%;
+      }
+      .mid-content {
+        padding: 1.6rem 0;
+
+        width: 70%;
+        flex-direction: row-reverse;
+        gap: 6rem;
+        .side-text {
+          justify-content: space-between;
+          h1 {
+            font-size: 5rem;
+            letter-spacing: 0.1rem;
+          }
+          p {
+            width: 85%;
+            line-height: 1.5;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
+    .services {
+      flex-direction: row;
+      .top {
+        width: 50%;
+        padding: 1.2rem;
+        h1 {
+          font-size: 6rem;
+          line-height: 1;
+          margin-bottom: 1rem;
+        }
+        .service-box {
+          display: grid;
+          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))        }
+      }
+      .bottom {
+        width: 50%;
+      }
+    }
+  }
+}

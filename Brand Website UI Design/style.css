@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  padding: 1.6rem;
+}
+
+.head-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+.head-image img {
+  width: 100%;
+}
+.head-image .agencies {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.hero-section {
+  padding-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.hero-section h1 {
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  line-height: 1;
+  opacity: 0.8;
+}
+.hero-section p {
+  font-family: monospace;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  line-height: 1.6rem;
+}
+.hero-section img {
+  width: 100%;
+}
+.hero-section .brandings {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.hero-section .brandings hr {
+  color: gray;
+  opacity: 0.5;
+}
+.hero-section .brandings .sec {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-section .brandings .sec p {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 1.7rem;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1.2rem;
+}
+.mid-section img {
+  width: 100%;
+}
+.mid-section .mid-content {
+  display: flex;
+  gap: 2rem;
+}
+.mid-section .mid-content .side-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mid-section .mid-content .side-text p {
+  font-family: monospace;
+  font-size: 1.2rem;
+  opacity: 0.5;
+  line-height: 1.6rem;
+}
+.mid-section .mid-content h1 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  opacity: 0.8;
+  font-weight: 100;
+  line-height: 1;
+}
+.mid-section .mid-content .vertical-text p {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.services {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.services img {
+  width: 100%;
+}
+.services .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.services .top h1 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  opacity: 0.8;
+  font-weight: 100;
+}
+.services .top .service-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.services .top hr {
+  color: gray;
+  opacity: 0.5;
+}
+.services .top .service {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.services .top .service h3 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.services .top .service p {
+  font-family: monospace;
+  font-size: 1rem;
+  opacity: 0.5;
+  line-height: 1.6rem;
+}
+.services .top .service .service-bottom {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.7rem 0;
+}
+.services .top .service .service-bottom button {
+  padding: 0.5rem 0.7rem;
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 50%;
+}
+.services .top .service .service-bottom p {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 0.9rem;
+  opacity: 1;
+  line-height: 1.6rem;
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 4rem;
+  }
+  main .hero-section {
+    flex-direction: row-reverse;
+    gap: 4rem;
+  }
+  main .hero-section .hero-content {
+    padding: 1.6rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  main .hero-section .hero-content h1 {
+    font-size: 4.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.1;
+  }
+  main .hero-section .hero-content p {
+    margin-top: 0.7rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  main .hero-section .hero-content .brandings {
+    margin-top: auto;
+  }
+  main .hero-section .hero-content .brandings .sec {
+    padding: 0.9rem 0;
+  }
+  main .hero-section .hero-content .brandings .sec p {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+  main .mid-section {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  main .mid-section .image {
+    width: 30%;
+  }
+  main .mid-section img {
+    width: 100%;
+  }
+  main .mid-section .mid-content {
+    padding: 1.6rem 0;
+    width: 70%;
+    flex-direction: row-reverse;
+    gap: 6rem;
+  }
+  main .mid-section .mid-content .side-text {
+    justify-content: space-between;
+  }
+  main .mid-section .mid-content .side-text h1 {
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+  }
+  main .mid-section .mid-content .side-text p {
+    width: 85%;
+    line-height: 1.5;
+    opacity: 0.4;
+  }
+  main .services {
+    flex-direction: row;
+  }
+  main .services .top {
+    width: 50%;
+    padding: 1.2rem;
+  }
+  main .services .top h1 {
+    font-size: 6rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  main .services .top .service-box {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  main .services .bottom {
+    width: 50%;
+  }
+}
